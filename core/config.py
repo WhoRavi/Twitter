@@ -38,7 +38,7 @@ GEMINI_TEXT_MODEL = "gemini-2.5-flash"
 GEMINI_IMAGE_MODEL = "models/imagen-4.0-generate-001"
 
 # OpenAI models
-OPENAI_MODEL = "gpt-4.1-mini"
+OPENAI_MODEL = "gpt-5-mini"
 
 # ============================================================================
 # APPLICATION SETTINGS
@@ -46,22 +46,25 @@ OPENAI_MODEL = "gpt-4.1-mini"
 # CSV file to track post history
 CSV_FILE = 'data/post_history.csv'
 
-# Topics for tweet generation
+# Topics for tweet generation (AI-focused only)
 TOPICS = [
     'Artificial Intelligence',
     'Generative AI',
     'Machine Learning',
-    'Python Programming',
-    'Data Science',
     'Deep Learning',
     'Natural Language Processing',
     'Computer Vision',
     'Neural Networks',
     'Large Language Models',
-    'Data Analytics',
-    'Big Data',
     'AI Ethics',
-    'MLOps',
+    'AI Agents',
+    'Multimodal AI',
+    'Transformer Models',
+    'AI Alignment',
+    'Reinforcement Learning',
+    'AI Safety',
+    'Foundation Models',
+    'Research in AI',
 ]
 
 # Temperature setting for content generation

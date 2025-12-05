@@ -31,14 +31,17 @@ def main():
     # Generate tweet content using web search
     print("🔍 Generating tweet with latest information...")
     try:
-        topic, tweet_text = generate_tweet(
+        topic, tweet_text, source_url = generate_tweet(
             use_web_search=True,
-            previous_posts=previous_posts
+            previous_posts=previous_posts,
+            include_source=True  # Include source URL in tweet
         )
         
         print(f"\n📝 Topic: {topic}")
-        print(f"📄 Generated tweet:\n{tweet_text}\n")
-        print("=" * 70)
+        print(f"📄 Generated tweet:\n{tweet_text}")
+        if source_url:
+            print(f"🔗 Source: {source_url}")
+        print("\n" + "=" * 70)
         
     except Exception as e:
         print(f"❌ Error generating tweet: {e}")
