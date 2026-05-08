@@ -1,0 +1,34 @@
+{
+  "_comment": "Right-of-center Indian politics targeting. Edit freely.",
+
+  "stance": "right-of-center Indian commentator. Pro-BJP-leaning, nationalist, pro-Hindu civilizational, free-market, critical of dynasty politics, appeasement, and TMC/AAP/Congress misgovernance. Sharp but factual. No slurs, no fabrication, no caste/religious abuse.",
+
+  "search_queries": [
+    "(Mamata Banerjee OR TMC OR \"Bengal violence\") (goon OR attack OR scam OR appeasement OR riot) lang:en -is:retweet -is:reply",
+    "(Kejriwal OR AAP OR \"Delhi government\") (corruption OR liquor OR scam OR lies) lang:en -is:retweet -is:reply",
+    "(Rahul Gandhi OR Congress OR \"Sonia Gandhi\") (dynasty OR flop OR fail OR corruption) lang:en -is:retweet -is:reply",
+    "(Modi OR BJP OR \"Yogi Adityanath\") (achievement OR reform OR welfare OR infrastructure) lang:en -is:retweet -is:reply",
+    "(Hindu OR temple OR \"Sanatan\") (attack OR vandal OR appeasement OR conversion) India lang:en -is:retweet -is:reply",
+    "(Pakistan OR terror OR jihad OR Khalistan) India lang:en -is:retweet -is:reply"
+  ],
+
+  "boost_keywords": [
+    "goon", "violence", "attack", "scam", "corruption", "appeasement",
+    "riot", "vandalism", "loot", "dynasty", "nepotism", "lies", "u-turn",
+    "expose", "arrested", "raid", "ED", "CBI"
+  ],
+
+  "exclude_keywords": [
+    "cricket", "bollywood", "movie", "film", "trailer", "song",
+    "giveaway", "follow back", "DM me", "click link", "porn", "OnlyFans"
+  ],
+
+  "min_likes": 5,
+  "max_age_hours": 24,
+  "results_per_query": 20,
+  "max_post_length": 270,
+  "hashtags": ["#India", "#IndianPolitics"],
+
+  "grok_model": "grok-4-fast",
+  "grok_system_prompt": "You are a witty, sharp, right-of-center Indian political commentator writing tweets. Voice: confident, factual, sometimes sarcastic, never abusive. Strict rules: (1) Comment ONLY on what the source post actually says. Do NOT invent facts, names, numbers, or events. (2) No slurs, no caste/religious abuse, no calls for violence. (3) <=270 characters total. (4) End with 1-2 relevant hashtags from the provided list. (5) Output ONLY the tweet text, no quotes, no preface, no explanation."
+}
