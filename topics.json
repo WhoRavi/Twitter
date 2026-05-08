@@ -1,34 +1,51 @@
 {
-  "_comment": "Right-of-center Indian politics targeting. Edit freely.",
+  "_comment": "Right-wing nationalist Indian commentary. Targets ideologies & behaviors, not just names — so it auto-catches new actors.",
 
-  "stance": "right-of-center Indian commentator. Pro-BJP-leaning, nationalist, pro-Hindu civilizational, free-market, critical of dynasty politics, appeasement, and TMC/AAP/Congress misgovernance. Sharp but factual. No slurs, no fabrication, no caste/religious abuse.",
+  "stance": "Indian right-wing nationalist commentator. Civilizational pride in Bharat, Hindu, Sanatan dharma. Pro-sovereignty, pro-military, pro-economic reform, pro-meritocracy. Anti-appeasement, anti-dynasty, anti-urban-naxal, anti-breaking-India narrative. Calls out leftist/liberal hypocrisy, selective outrage, foreign-funded NGOs, biased mainstream media, judicial overreach, vote-bank politics, and any politician — TMC/Congress/AAP/DMK/SP/Communist — who puts ideology, family, or vote bank above the nation. Sharp, witty, factual. Never abusive, never communal slurs, never calls for violence.",
 
   "search_queries": [
-    "(Mamata Banerjee OR TMC OR \"Bengal violence\") (goon OR attack OR scam OR appeasement OR riot) lang:en -is:retweet -is:reply",
-    "(Kejriwal OR AAP OR \"Delhi government\") (corruption OR liquor OR scam OR lies) lang:en -is:retweet -is:reply",
-    "(Rahul Gandhi OR Congress OR \"Sonia Gandhi\") (dynasty OR flop OR fail OR corruption) lang:en -is:retweet -is:reply",
-    "(Modi OR BJP OR \"Yogi Adityanath\") (achievement OR reform OR welfare OR infrastructure) lang:en -is:retweet -is:reply",
-    "(Hindu OR temple OR \"Sanatan\") (attack OR vandal OR appeasement OR conversion) India lang:en -is:retweet -is:reply",
-    "(Pakistan OR terror OR jihad OR Khalistan) India lang:en -is:retweet -is:reply"
+    "(\"vote bank\" OR appeasement OR \"minority appeasement\" OR \"selective outrage\" OR \"selective secularism\") India lang:en -is:retweet -is:reply",
+
+    "(\"urban naxal\" OR \"breaking India\" OR \"anti-national\" OR \"toolkit\" OR \"foreign funded\" OR Soros OR \"deep state\") India lang:en -is:retweet -is:reply",
+
+    "(Hindu OR Hindus OR Sanatan OR temple OR mandir) (attack OR vandal OR demolition OR insult OR mock OR target) lang:en -is:retweet -is:reply",
+
+    "(Congress OR TMC OR AAP OR DMK OR \"Samajwadi Party\" OR Communist OR CPI OR CPM) (corruption OR scam OR loot OR lies OR u-turn OR hypocrisy OR flop OR riot) India lang:en -is:retweet -is:reply",
+
+    "(Rahul OR Mamata OR Kejriwal OR Owaisi OR Stalin OR Akhilesh OR Pawar OR Tharoor) (lies OR hypocrisy OR exposed OR caught OR \"flip-flop\" OR drama) lang:en -is:retweet -is:reply",
+
+    "(Lutyens OR \"khan market\" OR liberal OR \"left-liberal\" OR woke OR propaganda OR narrative) India lang:en -is:retweet -is:reply",
+
+    "(\"hindu rights\" OR \"hindu genocide\" OR \"temple land\" OR waqf OR \"love jihad\" OR \"land jihad\" OR halala OR conversion) India lang:en -is:retweet -is:reply",
+
+    "(Modi OR BJP OR Yogi OR \"Amit Shah\" OR \"Indian Army\" OR ISRO OR \"Make in India\") (achievement OR reform OR success OR welfare OR strike OR launch OR record) lang:en -is:retweet -is:reply",
+
+    "(Pakistan OR China OR Bangladesh OR Khalistan OR terror OR jihad OR infiltrator) India lang:en -is:retweet -is:reply",
+
+    "(\"mainstream media\" OR MSM OR NDTV OR \"The Wire\" OR \"The Print\" OR \"BBC India\") (lies OR biased OR caught OR exposed OR fake) lang:en -is:retweet -is:reply"
   ],
 
   "boost_keywords": [
-    "goon", "violence", "attack", "scam", "corruption", "appeasement",
-    "riot", "vandalism", "loot", "dynasty", "nepotism", "lies", "u-turn",
-    "expose", "arrested", "raid", "ED", "CBI"
+    "exposed", "caught", "lies", "hypocrisy", "u-turn", "flip-flop",
+    "appeasement", "vote bank", "scam", "corruption", "riot", "violence",
+    "attack", "vandalism", "demolition", "loot", "dynasty", "nepotism",
+    "anti-national", "anti-hindu", "urban naxal", "breaking india",
+    "foreign funded", "toolkit", "soros", "propaganda", "biased",
+    "ED", "CBI", "NIA", "raid", "arrested", "chargesheet"
   ],
 
   "exclude_keywords": [
-    "cricket", "bollywood", "movie", "film", "trailer", "song",
-    "giveaway", "follow back", "DM me", "click link", "porn", "OnlyFans"
+    "cricket", "IPL", "bollywood", "movie", "film", "trailer", "song",
+    "giveaway", "follow back", "DM me", "click link", "subscribe",
+    "porn", "OnlyFans", "crypto pump", "airdrop", "NFT", "casino"
   ],
 
-  "min_likes": 5,
+  "min_likes": 10,
   "max_age_hours": 24,
-  "results_per_query": 20,
+  "results_per_query": 15,
   "max_post_length": 270,
-  "hashtags": ["#India", "#IndianPolitics"],
+  "hashtags": ["#India", "#Bharat", "#IndianPolitics", "#HinduRights", "#Nationalism"],
 
   "grok_model": "grok-4-fast",
-  "grok_system_prompt": "You are a witty, sharp, right-of-center Indian political commentator writing tweets. Voice: confident, factual, sometimes sarcastic, never abusive. Strict rules: (1) Comment ONLY on what the source post actually says. Do NOT invent facts, names, numbers, or events. (2) No slurs, no caste/religious abuse, no calls for violence. (3) <=270 characters total. (4) End with 1-2 relevant hashtags from the provided list. (5) Output ONLY the tweet text, no quotes, no preface, no explanation."
+  "grok_system_prompt": "You are a sharp, witty, right-wing Indian nationalist political commentator writing tweets. Voice: confident, civilizationally proud, sometimes sarcastic, always factual. Worldview: pro-Bharat, pro-Hindu, pro-Sanatan, pro-sovereignty, pro-meritocracy. Anti-appeasement, anti-dynasty, anti-urban-naxal, anti-breaking-India, anti-foreign-funded-NGO, anti-biased-MSM. STRICT RULES: (1) Comment ONLY on what the source post actually says — do NOT invent facts, names, numbers, or quotes. (2) NO communal slurs, NO caste abuse, NO calls for violence, NO targeting individuals by religion. Attack ideology and actions, not identity. (3) <=270 characters total. (4) Pick 1-2 most relevant hashtags from the provided list. (5) Output ONLY the tweet text — no quotes, no preface, no explanation."
 }
