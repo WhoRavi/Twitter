@@ -4,25 +4,13 @@
   "stance": "Indian right-wing nationalist commentator. Civilizational pride in Bharat, Hindu, Sanatan dharma. Pro-sovereignty, pro-military, pro-economic reform, pro-meritocracy. Anti-appeasement, anti-dynasty, anti-urban-naxal, anti-breaking-India narrative. Calls out leftist/liberal hypocrisy, selective outrage, foreign-funded NGOs, biased mainstream media, judicial overreach, vote-bank politics, and any politician — TMC/Congress/AAP/DMK/SP/Communist — who puts ideology, family, or vote bank above the nation. Sharp, witty, factual. Never abusive, never communal slurs, never calls for violence.",
 
   "search_queries": [
-    "(\"vote bank\" OR appeasement OR \"minority appeasement\" OR \"selective outrage\" OR \"selective secularism\") India lang:en -is:retweet -is:reply",
+    "(Congress OR TMC OR AAP OR DMK OR Communist) (appeasement OR scam OR corruption OR riot OR hypocrisy OR lies OR u-turn OR exposed) India lang:en -is:retweet -is:reply",
 
-    "(\"urban naxal\" OR \"breaking India\" OR \"anti-national\" OR \"toolkit\" OR \"foreign funded\" OR Soros OR \"deep state\") India lang:en -is:retweet -is:reply",
+    "(Hindu OR Sanatan OR temple OR waqf OR conversion OR \"love jihad\") (attack OR vandal OR demolition OR insult OR appeasement) India lang:en -is:retweet -is:reply",
 
-    "(Hindu OR Hindus OR Sanatan OR temple OR mandir) (attack OR vandal OR demolition OR insult OR mock OR target) lang:en -is:retweet -is:reply",
+    "(\"urban naxal\" OR \"breaking India\" OR \"anti-national\" OR \"vote bank\" OR \"foreign funded\" OR woke OR propaganda) India lang:en -is:retweet -is:reply",
 
-    "(Congress OR TMC OR AAP OR DMK OR \"Samajwadi Party\" OR Communist OR CPI OR CPM) (corruption OR scam OR loot OR lies OR u-turn OR hypocrisy OR flop OR riot) India lang:en -is:retweet -is:reply",
-
-    "(Rahul OR Mamata OR Kejriwal OR Owaisi OR Stalin OR Akhilesh OR Pawar OR Tharoor) (lies OR hypocrisy OR exposed OR caught OR \"flip-flop\" OR drama) lang:en -is:retweet -is:reply",
-
-    "(Lutyens OR \"khan market\" OR liberal OR \"left-liberal\" OR woke OR propaganda OR narrative) India lang:en -is:retweet -is:reply",
-
-    "(\"hindu rights\" OR \"hindu genocide\" OR \"temple land\" OR waqf OR \"love jihad\" OR \"land jihad\" OR halala OR conversion) India lang:en -is:retweet -is:reply",
-
-    "(Modi OR BJP OR Yogi OR \"Amit Shah\" OR \"Indian Army\" OR ISRO OR \"Make in India\") (achievement OR reform OR success OR welfare OR strike OR launch OR record) lang:en -is:retweet -is:reply",
-
-    "(Pakistan OR China OR Bangladesh OR Khalistan OR terror OR jihad OR infiltrator) India lang:en -is:retweet -is:reply",
-
-    "(\"mainstream media\" OR MSM OR NDTV OR \"The Wire\" OR \"The Print\" OR \"BBC India\") (lies OR biased OR caught OR exposed OR fake) lang:en -is:retweet -is:reply"
+    "(Pakistan OR Khalistan OR terror OR jihad OR infiltrator OR China) India lang:en -is:retweet -is:reply"
   ],
 
   "boost_keywords": [
@@ -42,7 +30,7 @@
 
   "min_likes": 10,
   "max_age_hours": 24,
-  "results_per_query": 15,
+  "results_per_query": 5,
   "max_post_length": 270,
   "hashtags": ["#India", "#Bharat", "#IndianPolitics", "#HinduRights", "#Nationalism"],
 
